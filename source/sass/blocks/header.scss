@@ -1,0 +1,235 @@
+.header {
+  background-color: #1b2d37;
+  background-image: url("../../img/header-background-desktop1x.jpg");
+  background-size: cover;
+  min-height: 878px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $color-white;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 33px;
+  font-family: PT Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 22px;
+  padding-right: 27px;
+}
+
+.header__topLogo {
+  margin-right: auto;
+}
+
+.header__contact {
+  margin-right: 50px;
+  min-width: 170px;
+  &:hover,
+  &:focus {
+    color: $blue;
+    fill: $white;
+    outline: none;
+    transition: 0.2s ease;
+  }
+}
+
+.header__top-button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 180px;
+  height: 45px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  padding: 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__top-button:focus,
+.header__top-button:hover {
+  color: #00b2ff;
+  border-color: #00b2ff;
+  background-color: transparent;
+  outline: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 230px 20px 20px;
+}
+
+.promo__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  margin: 0;
+}
+
+.promo__text {
+  max-width: 750px;
+  font-family: "PT Mono", "Arial", monospace;
+  font-size: 22px;
+  line-height: 34px;
+  padding-left: 98px;
+  position: relative;
+  margin-top: 27px;
+  text-transform: lowercase;
+}
+
+.promo__text::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 2px;
+  background-color: #fff;
+  top: 16px;
+  left: 3px;
+}
+
+.promo__button {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #fff;
+  width: 406px;
+  height: 56px;
+  left: 347px;
+  top: 548px;
+  background: #00b2ff;
+  border-radius: 5px;
+  margin-left: 98px;
+  margin-top: 22px;
+  padding: 18px;
+}
+
+.promo__button:focus,
+.promo__button:hover {
+  background: #fff;
+  color: #00b2ff;
+  fill: #fff;
+  outline: 0;
+  transition: 0.2s ease;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    min-height: 0px;
+    background-image: url(../../img/header-background-tablet1x.jpg);
+  }
+
+  .header__top {
+    margin: 16px 0px 19px;
+  }
+
+  .header__contact {
+    min-width: 24px;
+    margin-right: 0;
+    margin-left: 33px;
+  }
+  .header__contact svg {
+    height: 24px;
+    width: 25px;
+  }
+
+  .promo {
+    min-height: 595px;
+    padding: 95px 88px;
+  }
+
+  .promo__title {
+    max-width: 470px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo__text {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 29px;
+    padding-left: 50px;
+    margin-top: 30px;
+  }
+
+  .promo__text::before {
+    width: 33px;
+    height: 2px;
+    left: 8px;
+  }
+
+  .promo__button {
+    font-size: 16px;
+    line-height: 19px;
+    width: 379px;
+    margin-left: 51px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-image: url(../../img/header-background-mobile1x.jpg);
+  }
+
+  .header__logo-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__contact {
+    margin-left: 23px;
+    padding: 0px 15px 0px 17px;
+  }
+  .header__top {
+    margin-bottom: 9px;
+  }
+
+  .promo {
+    min-height: 580px;
+    padding: 220px 17px 5px calc(15px + 50% * 0.2 - 32px);
+  }
+
+  .promo__title {
+    width: 280px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo__text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 26px;
+  }
+
+  .promo__button {
+    width: 286px;
+    margin-left: 4px;
+    margin-top: 23px;
+    padding: 18px 0;
+  }
+}

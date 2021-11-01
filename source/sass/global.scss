@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: $color-white;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.show-mobile,
+.show-tablet {
+  display: none;
+}
+
+@media (max-width: $tablet-width-max) {
+  .show-desktop {
+    display: none;
+  }
+
+  .show-tablet {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .show-tablet {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+}

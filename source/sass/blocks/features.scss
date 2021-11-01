@@ -1,0 +1,214 @@
+.features {
+  color: #666;
+  background-image: url(../../img/features-triangles.svg);
+  background-repeat: no-repeat;
+  background-position: center -120px;
+  margin-bottom: 93px;
+}
+
+.features__list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1220px;
+  padding: 25px;
+  list-style-type: none;
+  margin-top: 85px;
+}
+
+.features__list-item {
+  min-height: 300px;
+  border: 1px solid #ebebeb;
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
+  padding: 40px 44px;
+  position: relative;
+  background-color: $color-white;
+  fill: #00b2ff;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #00b2ff;
+    border-color: #00b2ff;
+    fill: #fff;
+    outline: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+
+    h3,
+    p {
+      color: $color-white;
+    }
+  }
+}
+
+.features__list-item::before {
+  content: "";
+  background-color: #00b2ff;
+  position: absolute;
+  width: 3px;
+  min-height: calc(100% + 2px);
+  left: -1px;
+  top: -1px;
+}
+
+.features__list-title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #00b2ff;
+  margin: 15px 0;
+}
+
+.features__list-text {
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.features__company {
+  box-sizing: border-box;
+  max-width: 1220px;
+  padding: 48px 30px 24px 205px;
+  margin: 0 auto;
+  background-image: url(../img/2005.png);
+  background-repeat: no-repeat;
+  background-position: -5px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.features__company-title {
+  margin: 0 0 20px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140.62%;
+  color: #666666;
+}
+
+.features__company-text {
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 20px;
+  max-width: 100%;
+}
+
+.features__company-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  min-width: 180px;
+  height: 45px;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.features__company-button:focus,
+.features__company-button:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #00b2ff;
+  outline: 0;
+  transition: 0.2s ease;
+}
+
+@media (max-width: 1023px) {
+  .features {
+    margin-bottom: 15px;
+  }
+
+  .features__list {
+    margin: 25px auto 0;
+  }
+
+  .features__list-item {
+    min-height: 232px;
+    padding: 25px 19px 18px 27px;
+  }
+
+  .features__list-title {
+    margin-top: 5px;
+    line-height: 24px;
+  }
+
+  .features__company {
+    padding-top: 1px;
+    padding-left: 210px;
+    padding-bottom: 74px;
+    background-size: 251px;
+    background-position: -8px 0;
+  }
+
+  .features__company-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-bottom: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features__wrapper {
+    padding: 0px 0 31px;
+  }
+
+  .features__list {
+    padding: 15px;
+  }
+
+  .features__list-item {
+    width: 100%;
+    min-height: 232px;
+    margin-bottom: 20px;
+    padding: 23px 13px 23px 25px;
+  }
+
+  .features__list-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 9px 0;
+  }
+
+  .features__list-text {
+    margin-top: 9px;
+  }
+
+  .features__company {
+    background: 0 0;
+    padding: 21px 13px;
+  }
+
+  .features__company-title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: -5px;
+  }
+
+  .features__company-text {
+    margin-top: 19px;
+  }
+  .features__company-button {
+    margin-top: 8px;
+  }
+}

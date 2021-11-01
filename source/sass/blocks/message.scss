@@ -1,0 +1,217 @@
+.message {
+  color: #fff;
+  min-height: 500px;
+  background-color: #00b2ff;
+  background-image: url(../../img/form-background.png),
+    url(../../img/form-triangles.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 430px) center, calc(50% + 779px) 34px;
+}
+
+.message__wrapper {
+  max-width: 1230px;
+  padding: 90px 30px 113px;
+}
+
+.message__form {
+  max-width: 570px;
+  margin-left: auto;
+}
+
+.message__form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__form legend {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: -5px;
+  color: #fff;
+}
+
+.message__form-text {
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+.message__form-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.message__form input,
+.message__form textarea {
+  border: 0;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 270px;
+  height: 50px;
+  padding: 14px 5px 14px 17px;
+  margin-bottom: 40px;
+}
+
+.message__form input::placeholder,
+.message__form textarea::placeholder {
+  color: #fff;
+}
+
+.message__form textarea {
+  min-width: 100%;
+  padding: 13px 20px 13px 16px;
+  height: 154px;
+  margin-bottom: 45px;
+}
+
+.message__form-button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 270px;
+  height: 45px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.message__form label {
+  width: 260px;
+  font-family: "PT Mono", "Arial", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  padding-left: 32px;
+  margin-top: 9px;
+  position: relative;
+  cursor: pointer;
+}
+
+.message__form label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+}
+
+.message__form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  left: 5px;
+  top: 8px;
+  transform: translateY(-80%) rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+  .message {
+    background-image: none;
+  }
+
+  .message__wrapper {
+    padding: 80px 28px 104px 33px;
+  }
+  .message__form {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
+  .message__form legend {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .message__form span {
+    margin-bottom: 55px;
+  }
+
+  .message__form textarea {
+    height: 159px;
+    margin-bottom: 48px;
+  }
+
+  .message__form-button {
+    min-width: 280px;
+  }
+
+  .message__form label {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+
+
+
+  .message__wrapper {
+    padding: 15px 15px 43px;
+  }
+
+  .message__form {
+    padding-top: 14px;
+  }
+
+  .message__form legend {
+    max-width: 250px;
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .message__form span {
+    margin-bottom: 25px;
+  }
+
+  .message__form-row {
+    flex-direction: column;
+  }
+
+  .message__form input {
+    margin-bottom: 32px;
+  }
+
+  .message__form textarea {
+    height: 104px;
+    margin-bottom: 33px;
+  }
+
+  .message__form-row {
+    flex-direction: column;
+  }
+
+  .message__form label {
+    margin-top: 31px;
+  }
+
+
+}
