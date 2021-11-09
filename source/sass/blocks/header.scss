@@ -34,6 +34,8 @@
 .header__contact {
   margin-right: 50px;
   min-width: 170px;
+  display: flex;
+  gap: 5px;
   &:hover,
   &:focus {
     color: $blue;
@@ -79,7 +81,7 @@
   padding: 230px 20px 20px;
 }
 
-.promo__title {
+.promo h1 {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -89,7 +91,7 @@
   margin: 0;
 }
 
-.promo__text {
+.promo p {
   max-width: 750px;
   font-family: "PT Mono", "Arial", monospace;
   font-size: 22px;
@@ -100,7 +102,7 @@
   text-transform: lowercase;
 }
 
-.promo__text::before {
+.promo p::before {
   content: "";
   position: absolute;
   width: 66px;
@@ -161,13 +163,13 @@
     padding: 95px 88px;
   }
 
-  .promo__title {
+  .promo h1 {
     max-width: 470px;
     font-size: 60px;
     line-height: 70px;
   }
 
-  .promo__text {
+  .promo p {
     max-width: 470px;
     font-size: 18px;
     line-height: 29px;
@@ -175,7 +177,7 @@
     margin-top: 30px;
   }
 
-  .promo__text::before {
+  .promo p::before {
     width: 33px;
     height: 2px;
     left: 8px;
@@ -195,7 +197,7 @@
     background-image: url(../../img/header-background-mobile1x.jpg);
   }
 
-  .header__logo-image {
+  .header img {
     width: 38px;
     height: 38px;
   }
@@ -213,14 +215,14 @@
     padding: 220px 17px 5px calc(15px + 50% * 0.2 - 32px);
   }
 
-  .promo__title {
+  .promo h1 {
     width: 280px;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.07em;
   }
 
-  .promo__text {
+  .promo p {
     font-size: 16px;
     line-height: 25px;
     margin-top: 26px;

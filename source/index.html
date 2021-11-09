@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Device</title>
@@ -12,65 +11,55 @@
   <link rel="preload" href="fonts/ptmono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
-
 <body>
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-
   <header class="header">
-
     <div class="header__wrapper container">
       <div class="header__top">
         <a href=# class="header__topLogo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
-            <img class="header__logo-image" src="img/logo-desktop@1x.png" width="202" height="52"
+            <img src="img/logo-desktop@1x.png" width="202" height="52"
               srcset="img/logo-desktop@2x.png 2x" alt="Smart Device logo">
           </picture>
         </a>
-
         <a class="header__contact" href="mailto:info@sd.ru" aria-label="Наш электронный адрес">
           <svg width="19" height="14">
             <use xlink:href="#icon-mail"></use>
           </svg>
-          <span class="show-desktop">info@sd.ru</span>
+          <div class="show-desktop">info@sd.ru</div>
         </a>
         <a class="header__contact" href="tel:+74950005252" aria-label="Наш номер телефона">
           <svg width="18" height="18">
             <use xlink:href="#icon-phone"></use>
           </svg>
-          <span class="header__contact-phone show-desktop">+7 (495) 000 52 52</span>
+          <div class="header__contact-phone show-desktop">+7 (495) 000 52 52</div>
         </a>
         <a class="header__top-button call show-desktop" href="#">Заказать звонок</a>
-
       </div>
-
       <section class="promo">
-        <h1 class="promo__title">ПЕЧАТНЫЕ ПЛАТЫ</h1>
-        <p class="promo__text">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <h1>ПЕЧАТНЫЕ ПЛАТЫ</h1>
+        <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a class="promo__button anchor-link" href="#form">
-          <span class="promo__button-text show-desktop ">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</span>
-          <span class="promo__button-text show-tablet">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</span>
-          <span class="promo__button-text show-mobile">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span>
+          <div class="promo__button-text show-desktop ">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
+          <div class="promo__button-text show-tablet">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
+          <div class="promo__button-text show-mobile">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</div>
         </a>
       </section>
-
     </div>
-
   </header>
-
   <main>
     <section class="features">
       <div class="features__wrapper container">
-
         <ul class="features__list">
           <li class="features__list-item">
             <svg width="29" height="35">
               <use xlink:href="#icon-watch"></use>
             </svg>
-            <h3 class="features__list-title">Оперативные сроки</h3>
-            <p class="features__list-text">Усовершенствованная логистическая система позволяет нам&nbsp; просчитывать
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам&nbsp; просчитывать
               стоимость, производить и
               доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
@@ -78,8 +67,8 @@
             <svg width="35" height="35">
               <use xlink:href="#icon-hired"></use>
             </svg>
-            <h3 class="features__list-title">Крупные поставщики</h3>
-            <p class="features__list-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
               CREE, HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
           </li>
@@ -87,48 +76,45 @@
             <svg width="36" height="31">
               <use xlink:href="#icon-detective"></use>
             </svg>
-            <h3 class="features__list-title">Полная конфиденциальность</h3>
-            <p class="features__list-text">По желанию клиента &nbsp;мы обеспечиваем полную конфеденциальность.</p>
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента &nbsp;мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="features__list-item">
             <svg width="35" height="35">
               <use xlink:href="#icon-tag"></use>
             </svg>
-            <h3 class="features__list-title">Персонализация стоимости</h3>
-            <p class="features__list-text">Мы &nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+            <h3>Персонализация стоимости</h3>
+            <p>Мы &nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы
               установить&nbsp;ту цену,
               которая Вас устраивает.</p>
           </li>
         </ul>
-
         <div class="features__company">
-          <h2 class="features__company-title">О компании</h2>
-          <p class="features__company-text">Мы поставляем электронные комплектующие, производим печатные платы и
+          <h2>О компании</h2>
+          <div class="features__company-text">Мы поставляем электронные комплектующие, производим печатные платы и
             предоставляем мировые технологии с
-            1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="features__company-text show-desktop">Наши поставщики - мировые производители электронных
+            1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</div>
+          <div class="features__company-text show-desktop">Наши поставщики - мировые производители электронных
             компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
-            крупнейшие Производители светотехники России.</p>
-          <p class="features__company-text show-tablet">Наши поставщики - мировые производители электронных
+            крупнейшие Производители светотехники России.</div>
+          <div class="features__company-text show-tablet">Наши поставщики - мировые производители электронных
             компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-            Железных Дорог..</p>
-          <p class="features__company-text show-mobile">Наши поставщики - мировые производители электронных
+            Железных Дорог..</div>
+          <div class="features__company-text show-mobile">Наши поставщики - мировые производители электронных
             компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-            Железных Дорог..</p>
+            Железных Дорог..</div>
 
           <a class="features__company-button" href="#">Подробнее</a>
         </div>
-
       </div>
     </section>
-
     <section class="products">
       <div class="products__wrapper container ">
-        <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
+        <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="products__list">
           <li class="products__item-develop">
             <a class="products__link" href="#" id="develop">Производство печатных плат</a>
@@ -142,13 +128,12 @@
         </ul>
       </div>
     </section>
-
     <section class="message">
       <div class="message__wrapper container">
         <form class="message__form" action="https://echo.htmlacademy.ru" method="post" name="message" id="form">
           <fieldset>
             <legend>Остались вопросы? Задайте их нам!</legend>
-            <span class="message__form-text">Мы проконсультируем Вас бесплатно</span>
+            <div class="message__form-text">Мы проконсультируем Вас бесплатно</div>
             <div class="message__form-row">
               <input type="text" name="name" id="name" placeholder="Имя" value="" aria-label="Введите ваше имя"
                 required>
@@ -166,20 +151,17 @@
         </form>
       </div>
     </section>
-
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper container">
       <section class="footer__links">
         <a href=# class="footer__logo">
           <picture>
-
-            <img class="footer__logo-image" src="img/logo-desktop-footer@1x.png" width="216" height="52"
+            <img src="img/logo-desktop-footer@1x.png" width="216" height="52"
               srcset="img/logo-desktop-footer@2x.png 2x" alt="Smart Device logo">
           </picture>
         </a>
-        <p class="show-tablet show-mobile">1999-2018 SD Service Devices</p>
+        <div class="show-tablet show-mobile">1999-2018 SD Service Devices</div>
         <ul class="footer__social">
           <li>
             <a href="#" aria-label="Smart Device на фейсбук">
@@ -204,8 +186,7 @@
           </li>
         </ul>
       </section>
-
-      <section class="footer__section footer__section_nav">
+      <section class="footer__section footer__section-nav">
         <input class="show-mobile visually-hidden acc" type="checkbox" id="nav" name="nav">
         <label for="nav">Разделы сайта</label>
         <ul>
@@ -234,7 +215,6 @@
           </li>
         </ul>
       </section>
-
       <section class="footer__section-contacts">
         <input class="show-mobile visually-hidden acc" type="checkbox" id="contacts" name="contacts">
         <label for="contacts">Наш офис</label>
@@ -245,18 +225,15 @@
           <a href="tel:+792692608079">+7 (926) 926-080-79</a>
         </div>
       </section>
-
       <ul class="footer__info">
         <li class="footer__info-all show-desktop">Все права защищены</li>
         <li class="footer__info-sd show-desktop">1999-2018 SD Service Devices</li>
         <li class="footer__info-conf">Условия конфиденциальности</li>
         <li class="footer__info-studio">Developed by wow studio </li>
       </ul>
-
     </div>
   </footer>
-
-  <section class="modal modalForm">
+  <section class="modal modal__form">
     <button class="modal__button-close" type="button">Закрыть</button>
     <form class="form modal__form" action="https://echo.htmlacademy.ru" method="post" name="message" id="form-modal">
       <fieldset>
@@ -273,9 +250,7 @@
     </form>
   </section>
   <div class="overlay"></div>
-  <script src="js/scroll.js"></script>
+
   <script src="js/script.js"></script>
-
 </body>
-
 </html>
