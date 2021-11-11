@@ -20,8 +20,11 @@
       <div class="header__top">
         <a href=# class="header__topLogo">
           <picture>
+             <!-- 1х: 202px; 2x: 404px -->
+            <source media="(max-width: 767px)" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x" type="image/webp">
             <source media="(max-width: 767px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
-            <img src="img/logo-desktop@1x.png" width="202" height="52"
+            <source srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x" type="image/webp">
+            <img src="img/logo-desktop@1x.png 1x" width="202" height="52"
               srcset="img/logo-desktop@2x.png 2x" alt="Smart Device logo">
           </picture>
         </a>
@@ -157,8 +160,10 @@
       <section class="footer__links">
         <a href=# class="footer__logo">
           <picture>
+            <!-- 1х: 216px; 2x: 432px -->
+            <source srcset="img/logo-desktop-footer@1x.png 1x, img/logo-desktop-footer@2x.png 2x" type="image/webp">
             <img src="img/logo-desktop-footer@1x.png" width="216" height="52"
-              srcset="img/logo-desktop-footer@2x.png 2x" alt="Smart Device logo">
+              srcset="img/logo-desktoаp-footer@2x.png 2x" alt="Smart Device logo">
           </picture>
         </a>
         <div class="show-tablet show-mobile">1999-2018 SD Service Devices</div>
