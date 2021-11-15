@@ -86,8 +86,8 @@
 }
 
 .features__company h2 {
-  margin: 0 0 20px;
   font-family: "Roboto Condensed";
+  margin: 0 0 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -124,8 +124,8 @@
 
 .features__company-button:focus,
 .features__company-button:hover {
-  color: #fff;
-  border-color: #fff;
+  color: #ffffff;
+  border-color: #ffffff;
   background-color: #00b2ff;
   outline: 0;
   transition: 0.2s ease;
@@ -169,7 +169,7 @@
 
 @media (max-width: 767px) {
   .features__wrapper {
-    padding: 0px 0 31px;
+    padding: 0 0 31px;
   }
 
   .features__list {
@@ -207,6 +207,7 @@
   .features__company-text {
     margin-top: 19px;
   }
+
   .features__company-button {
     margin-top: 8px;
   }

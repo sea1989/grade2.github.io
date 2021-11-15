@@ -19,12 +19,10 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 130px;
-  padding: 45px 0 0px 21px;
+  padding: 45px 0 0 21px;
 }
 
 .footer__social {
-  padding: 0;
-  margin: 52px 0 0;
   display: flex;
   padding: 0;
   margin: 0;
@@ -50,7 +48,7 @@
   margin-right: auto;
   max-width: 525px;
   box-sizing: border-box;
-  padding: 45px 0px 0px 25px;
+  padding: 45px 0 0 25px;
   display: flex;
 }
 
@@ -69,8 +67,7 @@
 .footer__section-contacts p,
 .footer__section-nav a,
 .footer__section-nav p {
-  color: #8d969b;
-  font-family: PT Mono;
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -87,8 +84,8 @@
   flex-direction: column;
   display: flex;
   align-items: flex-start;
-  padding: 45px 0px 0px 171px;
-  font-family: PT Mono;
+  padding: 45px 0 0 171px;
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -114,7 +111,7 @@
 }
 
 .footer__contacts-adress {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .footer__info {
@@ -124,12 +121,11 @@
   grid-column-end: 4;
   display: flex;
   list-style: none;
-  font-family: PT Mono;
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -159,6 +155,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
   }
+
   .footer__links {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -166,7 +163,7 @@
     grid-column-end: 3;
     width: 100%;
     padding: 23px 10px 10px 25px;
-    font-family: PT Mono;
+    font-family: "PT Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -180,8 +177,8 @@
   }
 
   .footer img {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .footer__section-nav {
@@ -218,7 +215,7 @@
   }
 
   .footer__section-nav ul {
-    margin: 0px;
+    margin: 0;
   }
 
   .footer__contacts-adress {
@@ -276,7 +273,10 @@
     grid-column-end: 2;
     font-size: 13px;
     line-height: 24px;
-    margin-top: 39px;
+    margin-top: 0;
+    padding: 29px 29px 4px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer__contacts-list {
@@ -343,12 +343,6 @@
     }
   }
 
-  .footer__info {
-    margin-top: 0;
-    padding: 29px 29px 4px;
-    flex-direction: column;
-    align-items: center;
-  }
   .footer__info-studio {
     margin-left: 0;
   }

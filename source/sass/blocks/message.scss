@@ -1,9 +1,9 @@
 .message {
-  color: #fff;
+  color: #ffffff;
   min-height: 500px;
   background-color: #00b2ff;
-  background-image: url(../../img/form-background.png),
-    url(../../img/form-triangles.svg);
+  background-image: url("../../img/form-background.png"),
+    url("../../img/form-triangles.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 430px) center, calc(50% + 779px) 34px;
 }
@@ -34,7 +34,7 @@
   padding: 0;
   margin-bottom: 10px;
   margin-left: -5px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .message__form-text {
@@ -64,7 +64,7 @@
 
 .message__form input::placeholder,
 .message__form textarea::placeholder {
-  color: #fff;
+  color: #ffffff;
 }
 
 .message__form textarea {
@@ -81,10 +81,10 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   min-width: 270px;
   height: 45px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
   text-align: center;
@@ -112,7 +112,7 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   left: 0;
   top: 0;
@@ -123,8 +123,8 @@
   position: absolute;
   width: 6px;
   height: 3px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   left: 5px;
   top: 8px;
   transform: translateY(-80%) rotate(-45deg);
@@ -138,6 +138,7 @@
   .message__wrapper {
     padding: 80px 28px 104px 33px;
   }
+
   .message__form {
     max-width: 590px;
     margin: 0 auto;
@@ -199,10 +200,6 @@
   .message__form textarea {
     height: 104px;
     margin-bottom: 33px;
-  }
-
-  .message__form-row {
-    flex-direction: column;
   }
 
   .message__form label {
