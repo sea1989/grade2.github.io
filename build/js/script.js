@@ -1,7 +1,7 @@
 'use strict';
 
 var messageLink = document.querySelector('.call');
-var messageForm = document.querySelector('.modal__form');
+var messageForm = document.querySelector('.modal-form');
 var closeButtonLink = document.querySelector('.modal__button-close');
 var phoneInputList = document.querySelectorAll('.phone');
 var overlay = document.querySelector('.overlay');
